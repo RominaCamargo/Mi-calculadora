@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Akaya Kanadaka';
+    src: url('/fonts/AkayaKanadaka-Regular.ttf'); /* Ajusta según la ubicación */
+}
+
+body {
+    font-family: 'Akaya Kanadaka', cursive;
+    background-color: #d8e6f3a4; /* Fondo azul muy suave */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Akaya Kanadaka', cursive;
+    color:#497aff;; /* Negro */
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15); /* Sombra suave en el título */
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #d6e2f8; /* Fondo blanco para el formulario */
+    padding: 40px;
+    border-radius: 20px; /* Bordes redondeados suaves */
+    display: inline-block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 450px;
+    margin-bottom: 40px;
+    text-align: center; /* Centra los elementos dentro del formulario */
+}
+
+/* Estilos para los operadores como botones */
+#operadores button {
+    margin: 10px;
+    padding: 15px;
+    font-size: 1.5em;
+
+    background: #8eb0f0; /* Amarillo inspirado en Woodstock */
+    color: #000000; /* Texto negro */
+    border: 2px solid #497aff;
+    border-radius: 50px; /* Bordes de cápsula */
+    cursor: pointer;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-weight: bold;
+    width: 70px;
+    transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 20px #0f2144(0, 0, 0, 0.1);
+}
+
+#operadores button:hover {
+    background-color: #b9c9eb; /* Amarillo más oscuro al hacer hover */
+    transform: translateY(-3px) scale(1.05); /* Elevación y expansión suave */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+/* Estilo de los inputs */
+input {
+    margin: 15px 0;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 2px solid #000000; /* Borde negro */
+    background-color: #FFFFFF; /* Fondo blanco para los inputs */
+    color: #000000; /* Texto negro */
+    border-radius: 20px; /* Bordes redondeados suaves */
+    width: 100%;
+    box-sizing: border-box;
+    transition: box-shadow 0.4s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+input:focus {
+    box-shadow: 0 0 12px #221e05; /* Sombra amarilla brillante al hacer foco */
+    outline: none;
+    transform: scale(1.02); /* Pequeña expansión al hacer foco */
+}
+
+/* Botón principal de calcular */
+button[type="submit"][name="calcular"] {
+    margin: 20px 0;
+    padding: 15px 30px; /* Ajuste de padding horizontal */
+    font-size: 1.5em; /* Aumentamos el tamaño de fuente */
+    background: #8eb0f0; /* Amarillo */
+    color: #000000; /* Texto negro */
+    border: 2px solid #497aff;
+    border-radius: 15px; /* Cambiar a bordes ligeramente redondeados, no cápsula */
+    cursor: pointer;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-weight: bold;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 450px; /* Limitar el ancho máximo */
+    display: block; /* Aseguramos que sea un bloque completo */
+    transition: background-color 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"][name="calcular"]:hover {
+    background-color: #d6e2f8; /* Amarillo más oscuro al hacer hover */
+    transform: translateY(-3px) scale(1.05); /* Elevación y expansión suave */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+/* Estilo del cuadro de resultado */
+#resultado {
+    font-family: 'Akaya Kanadaka', cursive;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #81acf7; /* Color de fondo azul claro */
+    border: 2px solid #497aff; /* Azul más oscuro para el borde */
+    border-radius: 15px;
+    font-size: 24px;
+    color: #333; /* Color del texto más oscuro */
+    width: fit-content;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(41, 23, 201, 0.2); /* Sombra para darle un efecto más elegante */
+}
+
+
+/* Estilo del botón de regresar */
+#boton-regresar {
+    display: flex;
+    justify-content: center; /* Centramos el botón */
+    margin-top: 20px; /* Añadimos espacio hacia arriba */
+}
+
+#boton-regresar button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Akaya Kanadaka', cursive;
+    background-color: #8eb0f0; 
+    color: black;
+    border: 2px solid #497aff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efecto de transición */
+}
+
+#boton-regresar button:hover {
+    background-color: #b9c9eb; /* Color más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de agrandar al hacer hover */
+}

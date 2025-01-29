@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con Botones de Operadores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Calculadora con Perl</h1>
+    <form action="/cgi-bin/calculadora.pl" method="post">
+        <label for="numero1">Ingrese el primer número:</label>
+        <input type="number" id="numero1" name="numero1" required>
+        <br><br>
+
+        <!-- Botones de operadores -->
+        <div id="operadores">
+            <button type="submit" name="operador" value="+">+</button>
+            <button type="submit" name="operador" value="-">-</button>
+            <button type="submit" name="operador" value="*">*</button>
+            <button type="submit" name="operador" value="/">/</button>
+        </div>
+        <br>
+
+        <label for="numero2">Ingrese el segundo número:</label>
+        <input type="number" id="numero2" name="numero2" required>
+        <br><br>
+
+        <!-- Botón para calcular -->
+        <button type="submit" name="calcular" value="calcular">Calcular</button>
+    </form>
+
+    <div id="resultado">
+        <!-- Aquí se mostrará el resultado -->
+    </div>
+</body>
+</html>
